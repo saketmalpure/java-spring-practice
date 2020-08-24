@@ -1,4 +1,4 @@
-package com.practice.annotation;
+package com.sample;
 
 import java.lang.reflect.Method;
 import java.lang.reflect.Parameter;

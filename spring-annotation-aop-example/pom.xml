@@ -8,7 +8,7 @@
 		<version>2.2.3.RELEASE</version>
 	</parent>
 
-	<groupId>com.hellokoding.spring</groupId>
+	<groupId>com.sample</groupId>
 	<artifactId>spring-annotation-aop-example</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 

@@ -1,4 +1,4 @@
-package com.practice.annotation;
+package com.sample;
 
 import org.springframework.stereotype.Service;
 
