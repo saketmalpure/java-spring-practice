@@ -1,2 +1,5 @@
 /spring-annotation-aop-example/target/**
 **/.idea
+**/mvnw
+**/mvnw.cmd
+*.iml
