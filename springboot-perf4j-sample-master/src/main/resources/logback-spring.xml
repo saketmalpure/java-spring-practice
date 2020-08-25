@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<configuration scan="true">
+    <include resource="org/springframework/boot/logging/logback/base.xml"/>
+    
+    <logger name="org.springframework" level="INFO"/>
+
+    <contextListener class="ch.qos.logback.classic.jul.LevelChangePropagator">
+        <resetJUL>true</resetJUL>
+    </contextListener>
+
+    <root level="#logback.loglevel#">
+        <appender-ref ref="CONSOLE"/>
+    </root>
+    
+    <appender name="coalescingStatistics" class="org.perf4j.logback.AsyncCoalescingStatisticsAppender">
+    <!-- encoders are assigned the type
+         ch.qos.logback.classic.encoder.PatternLayoutEncoder by default -->
+    <!--<timeSlice>6000</timeSlice>-->
+	<appender-ref ref="CONSOLE"/>
+  </appender>
+  
+  <logger name="org.perf4j.TimingLogger" level="info">
+  	<appender-ref ref="coalescingStatistics" />
+  </logger>
+
+</configuration>
